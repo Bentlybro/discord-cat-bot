@@ -1,0 +1,16 @@
+[Unit]
+Description=Discord Cat Bot
+After=network.target
+
+[Service]
+Type=simple
+User=YOUR_USERNAME
+WorkingDirectory=/path/to/your/bot
+Environment="PATH=/path/to/your/bot/venv/bin"
+ExecStart=/path/to/your/bot/venv/bin/python bot.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
