@@ -9,8 +9,9 @@ echo "Discord Cat Bot - Service Installer"
 echo "===================================="
 echo ""
 
-# Get the absolute path to the bot directory
-BOT_DIR="$(cd "$(dirname "$0")" && pwd)"
+# Get the absolute path to the bot directory (parent of scripts)
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BOT_DIR="$(dirname "$SCRIPT_DIR")"
 echo "Bot directory: $BOT_DIR"
 
 # Get the current user
