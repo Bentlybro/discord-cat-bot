@@ -7,7 +7,7 @@ A feature-rich Discord bot that fetches random cat images and GIFs from [cataas.
 - `/cat [tag]` - Get a random cat picture, optionally filtered by tag (90+ tags with autocomplete!)
 - `/cat-gif` - Get a random animated cat GIF
 - `/cat-says <text> [tag] [font_size] [font_color]` - Get a cat picture with custom text
-- `/cat-gif-says <text> [font_size] [font_color] [filter] [type]` - Get an animated cat GIF with custom text and effects
+- `/cat-gif-says <text> [font_size] [font_color] [filter]` - Get an animated cat GIF with custom text and effects
 - `/cat-tags` - List all available tags
 - **User-installable** - Install to your account and use in ANY server or DM!
 - **Auto-retry** - Automatically retries on server errors for reliability

@@ -297,8 +297,7 @@ async def cat_gif_says(
     text: str,
     font_size: int = None,
     font_color: str = None,
-    filter: str = None,
-    type: str = None
+    filter: str = None
 ):
     """Fetches an animated cat GIF with custom text from cataas.com and sends it to Discord
     
@@ -307,7 +306,6 @@ async def cat_gif_says(
         font_size: Optional font size (e.g., 20, 50, 100)
         font_color: Optional font color (e.g., "red", "orange", "#FF0000")
         filter: Optional filter (e.g., "mono", "sepia", "negative", "paint", "blur")
-        type: Optional type (e.g., "square", "small", "medium")
     """
     await interaction.response.defer()
     
@@ -330,9 +328,6 @@ async def cat_gif_says(
         
         if filter is not None:
             params.append(f'filter={urllib.parse.quote(filter)}')
-        
-        if type is not None:
-            params.append(f'type={urllib.parse.quote(type)}')
         
         if params:
             url += '?' + '&'.join(params)
